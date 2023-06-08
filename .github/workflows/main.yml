@@ -22,7 +22,7 @@ jobs:
       - name: Install Project Dependencies
         run: pip install -r requirements.txt
 
-        # >> This is where you would run your tests and generate the test-output.json file <<
+        # >> This is where you would run your tests and generate the test-output.xml file <<
       - name: Execute Tests
         run: python -m pytest --junitxml=test-output.xml
         continue-on-error: true
